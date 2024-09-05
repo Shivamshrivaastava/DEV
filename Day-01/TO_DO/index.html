@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Task List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .day {
+            margin-bottom: 30px;
+        }
+
+        .day h2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+        }
+
+        li span.time {
+            font-weight: bold;
+            margin-right: 10px;
+            color: #007BFF;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+                max-width: 100%;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .day h2 {
+                font-size: 1rem;
+            }
+
+            li {
+                font-size: 0.9rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            li span.time {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .day h2 {
+                font-size: 0.9rem;
+            }
+
+            li {
+                font-size: 0.8rem;
+            }
+
+            li span.time {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Task List</h1>
+
+        <div class="day">
+            <h2>Tuesday</h2>
+            <ul>
+                <li><span class="time">11:00</span>Attend Scrum</li>
+                <li><span class="time">11:30 - 1:00</span>Attend DSA Lecture</li>
+                <li><span class="time">1:00 - 2:00</span>DSA/WEB214 Standup</li>
+                <li><span class="time">2:30 - 3:45</span>CSBT Lecture</li>
+                <li><span class="time">3:50 - 6:50</span>Complete DSA, CSBT Assignment</li>
+                <li><span class="time">7:00 - 9:00</span>WEB214 Lecture</li>
+                <li><span class="time">9:00 - 10:00</span>WEB214 Assignment</li>
+            </ul>
+        </div>
+
+        <div class="day">
+            <h2>Wednesday</h2>
+            <ul>
+                <li><span class="time">11:00</span>Attend Scrum</li>
+                <li><span class="time">11:30 - 1:00</span>Attend DSA Lecture</li>
+                <li><span class="time">1:00 - 2:00</span>DSA/WEB214 Standup</li>
+                <li><span class="time">2:30 - 3:45</span>CSBT Lecture</li>
+                <li><span class="time">3:50 - 6:50</span>Complete DSA, CSBT Assignment</li>
+                <li><span class="time">7:00 - 9:00</span>WEB214 Lecture</li>
+                <li><span class="time">9:00 - 10:00</span>WEB214 Assignment</li>
+            </ul>
+        </div>
+
+        <div class="day">
+            <h2>Thursday</h2>
+            <ul>
+                <li><span class="time">11:00</span>Attend Scrum</li>
+                <li><span class="time">11:30 - 1:00</span>Attend DSA Lecture</li>
+                <li><span class="time">1:00 - 2:00</span>DSA/WEB214 Standup</li>
+                <li><span class="time">2:30 - 3:45</span>CSBT Lecture</li>
+                <li><span class="time">3:50 - 6:50</span>Complete DSA, CSBT Assignment</li>
+                <li><span class="time">7:00 - 9:00</span>WEB214 Lecture</li>
+                <li><span class="time">9:00 - 10:00</span>WEB214 Assignment</li>
+            </ul>
+        </div>
+
+        <div class="day">
+            <h2>Friday</h2>
+            <ul>
+                <li><span class="time">11:00</span>Attend Scrum</li>
+                <li><span class="time">11:30 - 1:00</span>Attend DSA Lecture</li>
+                <li><span class="time">1:00 - 2:00</span>DSA/WEB214 Standup</li>
+                <li><span class="time">2:30 - 3:45</span>CSBT Lecture</li>
+                <li><span class="time">3:50 - 6:50</span>Complete DSA, CSBT Assignment</li>
+                <li><span class="time">7:00 - 9:00</span>WEB214 Lecture</li>
+                <li><span class="time">9:00 - 10:00</span>WEB214 Assignment</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
